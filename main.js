@@ -16,6 +16,14 @@ var currentBoyfriendBulletin = document.querySelectorAll('#currentBoyfriend')[0]
 var exBoyfriendBulletin = document.querySelectorAll('#exBoyfriend')[0];
 var policeOfficerBulletin = document.querySelectorAll('#policeOfficer')[0];
 
+//these are the audio files
+var subwayAudio = document.querySelectorAll('#subwayAudio')[0];
+var morgueAudio = document.querySelectorAll('#morgueAudio')[0];
+var policeStationAudio = document.querySelectorAll('#policeStationAudio')[0];
+var apartmentAudio = document.querySelectorAll('#apartmentAudio')[0];
+var prisonAudio = document.querySelectorAll('#prisonAudio')[0];
+var concertAudio = document.querySelectorAll('#concertAudio')[0];
+
 function displayScene(knotName) {
     story.ChoosePathString(knotName);
     var storyContainer = document.querySelectorAll('#textbox')[0];
@@ -165,36 +173,43 @@ closeButton.onclick = function() {
 subwayBulletin.onclick = function() {
     storyWrapper.style.display = "block";
     storyContainer.textContent = "";
+    subwayAudio.play();
     displayScene("Subway");
 }
 policeStationBulletin.onclick = function() {
     storyWrapper.style.display = "block";
     storyContainer.textContent = "";
+    policeStationAudio.play();
     displayScene("Station");
 }
 victimOfficeBulletin.onclick = function() {
     storyWrapper.style.display = "block";
     storyContainer.textContent = "";
+    //no audio it looks like?
     displayScene("Office");
 }
 prisonBulletin.onclick = function() {
     storyWrapper.style.display = "block";
     storyContainer.textContent = "";
+    prisonAudio.play();
     displayScene("Prison");
 }
 morgueBulletin.onclick = function() {
     storyWrapper.style.display = "block";
     storyContainer.textContent = "";
+    morgueAudio.play();
     displayScene("Morgue");
 }
 apartmentBulletin.onclick = function() {
     storyWrapper.style.display = "block";
     storyContainer.textContent = "";
+    apartmentAudio.play();
     displayScene("Apartment");
 }
 concertBulletin.onclick = function() {
     storyWrapper.style.display = "block";
     storyContainer.textContent = "";
+    concertAudio.play();
     displayScene("Concert");
 }
 

@@ -173,9 +173,9 @@ The 51st story of a high-rise holds a music agency. Terise’s office is large a
 
 ===Prison===
 The visiting room in a high-security prison about 45 minutes outside of the metro is where you find yourself. On the other side of the glass is a disheveled woman who looks at you with tired eyes, holding the phone to her ear.
-+   Do Nothing.
-    You do nothing, because the content here isn't written yet. Maybe check somewhere else instead?
-    ->Prison
+(Lenora has been added to your board.)
+~ serialKiller = true
+->Prison.lenora
     
 =lenora
 +   "Hello Leora."
