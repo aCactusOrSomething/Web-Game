@@ -1,0 +1,151 @@
+body {
+    font-family: sans-serif;
+    font-weight: lighter;
+    background-image: url("cork.jpg");
+}
+
+h1 {
+    text-align: center;
+    font-weight: lighter;
+}
+
+.container {
+    display: block;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+p, a {
+    color: gray;
+    line-height: 1.7em;
+    font-size: 13pt;
+}
+
+p {
+    opacity: 0.0;
+    transition: opacity 1.0s;
+}
+
+p.show {
+    opacity: 1.0;
+}
+
+p.choice {
+    text-align: center;
+}
+
+a:hover {
+    color: black;
+}
+
+.bulletin {
+    position: fixed;
+    display: none;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #eed294;
+    color: #3a3a39;
+}
+.bulletin:hover,
+.bulletin:focus {
+    background-color: #c2a25e;
+    color: #3a3a39;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#story {
+    position: fixed;
+    width: 800px;
+    height: 500px;
+    top: 50px;
+    left: 200px;
+    box-shadow:  10px 5px 5px black;
+    background-color: #eed294;
+    color: #3a3a39;
+    z-index: 3;
+    overflow: scroll;
+}
+
+#subway {
+    position: fixed;
+    left: 624px;
+    top: 349px;
+}
+#policeStation {
+    position: fixed;
+    left: 1328px;
+    top: 608px;
+}
+#victimOffice {
+    position: fixed;
+    left: 406px;
+    top: 424px;
+}
+#prison {
+    position: fixed;
+    left: 877px;
+    top: 133px;
+}
+#morgue {
+    position: fixed;
+    left: 319px;
+    top: 507px;
+}
+#apartment {
+    position: fixed;
+    left: 1365px;
+    top: 438px;
+}
+#concert {
+    position: fixed;
+    left: 1312px;
+    top: 569px;
+}
+
+#victim {
+    position: fixed;
+    left: 335px;
+    top: 300px;
+}
+#serialKiller {
+    position: fixed;
+    left: 937px;
+    top: 416px;
+}
+#businessPartner {
+    position: fixed;
+    left: 372px;
+    top: 139px;
+}
+#currentBoyfriend {
+    position: fixed;
+    left: 1100px;
+    top: 339px;
+}
+#exBoyfriend {
+    position: fixed;
+    left: 631px;
+    top: 100px;
+}
+#policeOfficer {
+    position: fixed;
+    left: 1120px;
+    top: 629px;
+}
+.close {
+    color: #a0a0a0;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    position: sticky;
+}
+
+.close:hover,
+.close:focus {
+  color: #000000;
+  text-decoration: none;
+  cursor: pointer;
+}
