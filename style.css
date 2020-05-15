@@ -41,6 +41,7 @@ a:hover {
 
 .bulletin {
     position: fixed;
+    z-index: 2;
     display: none;
     max-width: 600px;
     margin: 0 auto;
