@@ -85,7 +85,7 @@ A metro high-energy police department sprawls before you. Multiple high-profile 
 Just remember to come back here when you think you've solved the case.) 
 +   Read Emails
     ->Station.emails
-+   {victim && serialKiller && businessPartner && currentBoyfriend && exBoyfriend && policeOfficer} Make your accusation (End the game.)
++    Make your accusation (End the game.)
     You head over to Borsch's office to get things settled.
     ->Ending
     
