@@ -60,9 +60,12 @@ It's Office Borsch, a fellow from the force. What will you ask him?
     Officer Borsch - “About 15 minutes ago, I was walking a patrol up top when I got a call from a couple witnesses, they’re standing right over there waiting to give me an official report. I’ll write it up and send it to you at the station.” #Borsch
     ->Subway.borsch
 +   “Why do you think this is an easy one?" #Investigator
-    Officer Borsch - “You saw the bites right? Just like the ones that Leora lady confessed to. Maybe she got someone else to finish up her work. I’ll send you a summary of that case when we get back to the station.” #Borsch
+    Officer Borsch - “You saw the bites right? Just like the ones that Leora lady confessed to. This one’s a music corporate too. Maybe she got someone else to finish up her work. I’ll send you a summary of that case when we get back to the station.”
     ->Subway.borsch
-+   “Anything else I should know before I get back to the station to start research?" #Investigator
++   “A music corporate? Did you look through her briefcase already?”
+    Officer Borsch - “Yeah. You know I have some natural talent here. The connection was easy to verify once I saw the bites. Just didn’t want to wait for you.”
+    ->Subway.borsch
++   “Don’t forget, this case is mine. Anything else I should know before I get back to the station to start research?" #Investigator
     Officer Borsch - “No, I’ll get the Forensics team to overlook all her affects, and you’ll get a full report with access to the morgue if you need it.” #Borsch
     ->Subway.borsch
 +   Go Back
@@ -158,10 +161,43 @@ A lab lined with florescent bulbs, this dull room holds the victim’s corpse an
 
 ===Apartment===
 A surprisingly comfortable apartment, home to the victim and her significant other Terrell, sits in a more residential part of town. A small dog cuddles with the home-body Terrell, who always seems to be holding a book or a laptop for typing.
-+   Do Nothing.
-    You do nothing, because the content here isn't written yet. Maybe check somewhere else instead?
-    ->Apartment
++   “I’m here to ask you some questions about Terise, is that all right?”
+    Terrell, “Yes, I’ve been expecting you Officer. It’s just been a tough morning for me. What questions do you have?”
+    (Terell has been added to your bulletin board.)
+    ~ currentBoyfriend = true
+    ->Apartment.terell
++   Walk in and sit down in an armchair
+    Terrell, “I’ve been expecting you Officer, I hope we can get through all these questions quick; I have some arrangements to make for Terise’s funeral. Could I grab you some water?”
++   +   "Yes, water would be great."
+        Terrell pours you a glass of chilled water, placing it on a coaster on the side table. “So how can I help?”
+        ->Apartment.terell
++   +   "No, I’m fine thanks."
+        Terell shrugs, and leans back in his chair. "So how can I help?"
+        ->Apartment.terell
++   “Now doesn’t seem like a good time, could I come back later today?”
+    Terrell looks at you appreciatively, and says: “No, no of course we need to do this as soon as possible. Thank you for your concern. Let me pour you a glass of water and we can get right to your questions.” He pours a glass of chilled water and sets it on a side table adjacent to an armchair he gestures towards. “So how can I help?"
+    ->Apartment.terell
 
+VAR askedAboutLastTime = false
+=terell
++   “Tell me about your relationship with Terise.”
+    Terrell crosses his legs. “She met me right after getting out of a really negative relationship. I thought I was just a rebound, and I was okay with that. But she stuck around. We had a good relationship, over 9 years. She scared me sometimes though, she had this animal attraction to bad boys and they’d pop up and try to steal her away. I’m above that kind of nonsense though, it never phased me."
+    ->Apartment.terell
++   “When was the last time you talked to Terise?”
+    Terrell – He glances at the ground, “It was right before she left for that concert, Clay asked her to come and she decided to go. She never goes to shows. I was really confused, but it made sense.”
+       	You – “Why were you confused; it seems natural to go to a client’s concert?”
+    	Terrell – “No, that’s the whole thing. She had made it her trademark to not go to concerts. She was strictly the business and numbers side. Of course, she made an exception for him though. It doesn’t matter though.”
+    	~askedAboutLastTime = true
+    	->Apartment.terell
++   {askedAboutLastTime}“Do you know Clay?”
+        Terrell clenches his jaw when you mention Clay’s name. “Yeah of course I know Clay. He dated Terise before I did. He went down a deep hole after she broke up with him. He wrote that one song for Back in Blue when he was wasted and thought for years that he could only write another hit if he kept up that lifestyle. She never really mentioned him through our relationship until a few months ago, when he showed up at her office with a new album.” Terrell shakes his head.
+        ->Apartment.terell
++   {askedAboutLastTime}“Why didn’t you go to the concert with her?”
+    “I think it’s pretty obvious. I didn’t want to listen to a song he wrote about my long-term girlfriend. I didn’t understand why she would want to go listen to a song that her drunk ex wrote about her just to get a record deal. I was mad so I went and spent the night at my parents. I was planning on talking to Terise about it last night when I got back from work; but of course all of this happened. They told me it was an accident. It was right?"
+    ->Apartment.terell
++   Go back to the police station
+    You – “I’ll keep you filled in, thanks for all your help. Stay in town.”
+    ->Station
 
 
 ===Concert===
@@ -218,55 +254,19 @@ Clay - “What? Who are you? Why do you care about Terise? Look if you want an i
 You - “I’m with the Police Department. Terise’s body was found in a subway station and I’m trying to find out what happened. So I’ll ask you again, when was the last time you talked to Terise?”
 Clay - Clay nervously shuffles his feet, obviously weighing his next words in his head. “I had no idea, Officer. No, I haven’t talked to her since my first concert a couple nights ago. Have you talked to Terrell yet? He’s definitely seen her since then.” Clay drops his head into his hands, resting on his guitar. “What do I do now?”
 You - “Don’t leave town, be honest with me, we can get all this cleared up and make sure Terise gets justice.”
-(Clay Cross has been added to your investigative bulletin.)
+(Clay Cross has been added to your investigative bulletin. You can question him further there.)
 ~ exBoyfriend = true
 +   Go back
     ->Concert
 
 
+===QuestionClay===
+You decide to ask Clay a little bit more.
++   “Did you see anything else odd with Terise that would make you think someone would want to kill her?”
+    Clay - “No, she was a wonderful person. First off, she never comes to concerts, you’ve got to know that, so her showing up to my opening night was amazing. I felt on top of the world. But this jerk Security Officer your Police Department sent us had some massive stick up his butt about not letting her in without a pass. I came back as soon as I heard the ruckus and tried to clear it up, but Terise went off on him. His face turned purple and he just left. It was all for nothing though, the concert was a disaster and she left halfway through.”
+    ->QuestionClay
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    
 
 
 

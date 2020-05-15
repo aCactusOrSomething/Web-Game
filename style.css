@@ -71,69 +71,69 @@ a:hover {
 
 #subway {
     position: fixed;
-    left: 624px;
-    top: 349px;
+    left: 35.8%;
+    top: 14.6%;
 }
 #policeStation {
     position: fixed;
-    left: 1328px;
-    top: 608px;
+    left: 17%;
+    top: 38.6%;
 }
 #victimOffice {
     position: fixed;
-    left: 406px;
-    top: 424px;
+    left: 68%;
+    top: 27%;
 }
 #prison {
     position: fixed;
-    left: 877px;
-    top: 133px;
+    left: 5%;
+    top: 11%;
 }
 #morgue {
     position: fixed;
-    left: 319px;
-    top: 507px;
+    left: 6%;
+    top: 80%;
 }
 #apartment {
     position: fixed;
-    left: 1365px;
-    top: 438px;
+    left: 73%;
+    top: 59%;
 }
 #concert {
     position: fixed;
-    left: 1312px;
-    top: 569px;
+    left: 57%;
+    top: 90%;
 }
 
 #victim {
     position: fixed;
-    left: 335px;
-    top: 300px;
+    left: 42%;
+    top: 43%;
 }
 #serialKiller {
     position: fixed;
-    left: 937px;
-    top: 416px;
+    left: 18%;
+    top: 20%;
 }
 #businessPartner {
     position: fixed;
-    left: 372px;
-    top: 139px;
+    left: 69%; 
+    top: 9%;
 }
 #currentBoyfriend {
     position: fixed;
-    left: 1100px;
-    top: 339px;
+    left: 73%;
+    top: 50%;
 }
 #exBoyfriend {
     position: fixed;
-    left: 631px;
-    top: 100px;
+    left: 74%;
+    top: 75%;
 }
 #policeOfficer {
     position: fixed;
-    left: 1120px;
-    top: 629px;
+    left: 19%;
+    top: 72%;
 }
 .close {
     color: #a0a0a0;
