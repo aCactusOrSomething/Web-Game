@@ -81,9 +81,13 @@ It's Office Borsch, a fellow from the force. What will you ask him?
     
 ===Station===
 A metro high-energy police department sprawls before you. Multiple high-profile cases create a buzz that stays active at all hours. Your office holds a full wall covered in corkboard to make connections. You have two unread emails waiting on your work desktop computer. 
-(The Police Station has been added to your investigative corkboard - a conspiracy wall, of sorts, listing everywhere (and everyone) important to the case. You can use it for navigation by closing out of this textbox.) 
+(The Police Station has been added to your investigative corkboard - a conspiracy wall, of sorts, listing everywhere,and everyone, important to the case. You can use it for navigation by closing out of this textbox.
+Just remember to come back here when you think you've solved the case.) 
 +   Read Emails
     ->Station.emails
++   {victim && serialKiller && businessPartner && currentBoyfriend && exBoyfriend && policeOfficer} Make your accusation (End the game.)
+    You head over to Borsch's office to get things settled.
+    ->Ending
     
 =emails
 You have two emails, it seems.
@@ -360,6 +364,54 @@ You decide to ask Clay a little bit more.
 
     
 
+===Ending===
++   "Let’s debrief what I’ve learned."
+    Officer Borsch - “I look forward to hearing what you’ve learned.”
+    You - “I’ve talked to a long list of people, Clay Cross (her ex), Terrell (her boyfriend), Robert (coworker), the Forensic team, and your hunch, Leora. I’ve learned alot about them, and their connections to each other and Terise. Clay thinks Terise tanked his last chance at success. Terrell think Terise was going to leave him for Clay. Robert seems convinced that Leora did it through someone else, and off wrote any questions I had about his personal gains from the death. the Forensic team helped me finalize that it couldn’t have been an accident, there were too many of too rare a spider attacking too specific of an individual. Leora assured me that she didn’t have any personal reason to take out Terise, but that it was an extension of the “ideas” that she championed."
+    ->Ending
++   "What do you think about this whole Terise case?"
+    Officer Borsch - “I think its clear it was an extension of Leora’s work. Some fanatic that Leora was in contact with decided they wanted to get back like she did. Clay would fit that description.”
+    You - “But Leora told me that Clay could never hurt a hair on Terise’s head. He loves her too much.”
+    Officer Borsch - “Well, who else has such a relationship with Leora?”
+    ->Ending
++   "I need to ask you a question."
+    Borsch furrows his brow. “Yeah whatever you need to make this case more clear.”
++   +   "Did you work a security job at Clay’s Concert?"
+        Borsch - “Um yeah I did. They assigned it to me last minute. They didn’t need me the whole time though so I got out early.”
+        You - “Did you meet Terise there?”
+        Borsch - “Why would I have met Terise?”
+        You - “Clay said she got in a verbal fight with a security officer at the back. One that the police force sent. He said the officer left out of frustration and seemed worked up.”
+        Borsch - “Alright, alright, she did get upset at me but I kept my cool and just left when they asked me to. Lets get to the suspect room and get Clay!”
+        ->Ending
++   +   "Did you take down Leora’s confession?"
+        Borsch - “Yes I did, it was terrifying. You could see the hatred in her eyes.”
+        You - “Did you see the same hatred when you went back to the prison to talk to her about Terise - the day that she was murdered?”
+        Borsch - “Look, I don’t know where you’re going with this, but its obvious Leora wanted Clay to kill Terise so that she could get back at him for the whole Back in Blue fiasco.”
+        You - “You know that makes sense. Lets go ahead and pick out the suspect.”
+        ->Ending
++   Make your accusation.
+    You think that the murder was committed by...
++   +   Terell
+        ->Ending.badEnd
++   +   Clay
+        ->Ending.badEnd
++   +   Robert
+        ->Ending.badEnd
++   +   Leora
+        ->Ending.badEnd
++   +   Borsch
+        ->Ending.goodEnd
+
+=badEnd
+    You cuff the suspect you chose and lead them to a jail cell. You come out confident in your decision, ready to go finalize some paperwork with Borsch. He is nowhere to be found. In fact, no-one ever hears from him again.
+    ->END
+    
+=goodEnd
+    You spin around and throw Borsch to the ground. “You got caught in your own web.”
+    ->END
+
+
+    
 
 
 
