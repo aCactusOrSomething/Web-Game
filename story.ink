@@ -306,6 +306,12 @@ A standing-only theater made for concerts sits in a dark corner of the metro, an
 +   {askedAbtMusician} Go Look for Clay
     ->Concert.clay
 
+=front
+You know a few times without any response. There must not be anyone at the front this early in the day.
++   Walk into Alley Door
+    ->Concert.alley
+
+
 =alley
 He blurts out, “Can I help you?”
 +   “Do you know Terise Kelly?”
